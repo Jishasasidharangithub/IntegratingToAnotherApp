@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         binding?.whatsApp?.setOnClickListener {
             startActivity(getOpenWhatApp())
         }
+        binding?.twitter?.setOnClickListener {
+            startActivity(getOpenTwitter())
+        }
+        binding?.linkedIn?.setOnClickListener {
+            startActivity(getOpenLinkedIn())
+        }
     }
     private fun getOpenFacebookIntent(): Intent {
         return try {
@@ -52,6 +58,22 @@ class MainActivity : AppCompatActivity() {
         }
             catch (e: Exception){
             Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=+918086439333"))
+        }
+    }
+    private fun getOpenTwitter(): Intent? {
+        return try {
+            packageManager.getPackageInfo("com.twitter.android", 0)
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/appetizerandroid"))
+        } catch (e: Exception) {
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/appetizerandroid"))
+        }
+    }
+    private fun getOpenLinkedIn(): Intent? {
+        return try {
+            packageManager.getPackageInfo("com.linkedin.android", 0)
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/appetizerandroid/"))
+        } catch (e: Exception) {
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/appetizerandroid/"))
         }
     }
 }

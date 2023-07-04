@@ -10,7 +10,7 @@
         android:id="@+id/faceBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:background="@color/teal_200"
         android:onClick="fbClick"
         android:padding="10dp"
@@ -24,7 +24,7 @@
         android:id="@+id/YouTube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:background="@color/teal_200"
         android:onClick="youTubeClick"
         android:padding="10dp"
@@ -38,7 +38,7 @@
         android:id="@+id/whatsApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:background="@color/teal_200"
         android:onClick="whatsAppClick"
         android:padding="10dp"
@@ -46,6 +46,34 @@
         app:layout_constraintTop_toBottomOf="@+id/YouTube"
         app:layout_constraintStart_toStartOf="@+id/YouTube"
         app:layout_constraintEnd_toEndOf="@+id/YouTube"
+        />
+
+    <TextView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/teal_200"
+        android:onClick="twitterClick"
+        android:padding="10dp"
+        android:text="open Twitter"
+        app:layout_constraintTop_toBottomOf="@+id/whatsApp"
+        app:layout_constraintStart_toStartOf="@+id/whatsApp"
+        app:layout_constraintEnd_toEndOf="@+id/whatsApp"
+        />
+
+    <TextView
+        android:id="@+id/linkedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/teal_200"
+        android:onClick="linkedInClick"
+        android:padding="10dp"
+        android:text="open LinkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/twitter"
+        app:layout_constraintStart_toStartOf="@+id/twitter"
+        app:layout_constraintEnd_toEndOf="@+id/twitter"
         />
 
 
