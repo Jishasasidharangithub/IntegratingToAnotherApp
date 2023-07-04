@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/faceBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@color/teal_200"
+        android:onClick="fbClick"
+        android:padding="10dp"
+        android:text="open Facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/YouTube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/teal_200"
+        android:onClick="youTubeClick"
+        android:padding="10dp"
+        android:text="open YouTube"
+        app:layout_constraintTop_toBottomOf="@+id/faceBook"
+        app:layout_constraintStart_toStartOf="@+id/faceBook"
+        app:layout_constraintEnd_toEndOf="@+id/faceBook"
+        />
+
+    <TextView
+        android:id="@+id/whatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/teal_200"
+        android:onClick="whatsAppClick"
+        android:padding="10dp"
+        android:text="open WhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/YouTube"
+        app:layout_constraintStart_toStartOf="@+id/YouTube"
+        app:layout_constraintEnd_toEndOf="@+id/YouTube"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
